@@ -61,7 +61,7 @@ class imgBox(Box):
         scr.WINDOW.blit(bg,(self.x,self.y))
     
     def randImgs(self):
-        signList = os.listdir("C:\Games\Makaton Game revisited\Assets\Signs")
+        signList = os.listdir(os.path.join('Assets', 'Signs')
         self.randSignList = []
         while len(self.randSignList) < 4:
             randomSign = random.choice(signList)
